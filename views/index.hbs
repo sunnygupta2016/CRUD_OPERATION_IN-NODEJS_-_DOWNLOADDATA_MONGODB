@@ -1,0 +1,93 @@
+
+<h1>MAHARISHI MARKENDESWAR UNIVRSIRTY</h1>
+<section class="insert">
+    <h3>Insert Data</h3>
+    <form action="/insert" method="post" autocomlete="off">
+        <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomlete="off">
+        </div>
+        <div class="input">
+            <label for="rollno">Roll-No</label>
+            <input type="text" id="rollno" name="rollno" autocomlete="off">
+        </div>
+        <div class="input">
+            <label for="gmail">Gmail</label>
+            <input type="text" id="gmail" name="gmail" autocomlete="off">
+        </div>
+         <div class="input">
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" name="branch" autocomlete="off">
+        </div>
+        <button type="submit">INSERT</button>
+    </form>
+</section>
+<section class="scrollmenu">
+    <h3>Get Data</h3>
+    <a href="/get-data">LOAD DATA</a>
+    <article class="item">
+    <div>
+  <table>
+  <tr>
+    <th>Name</th>
+    <th>Rollno </th>
+    <th>Gmail</th>
+    <th>Branch</th>
+    
+</tr>
+
+        {{# each items }}
+            <article class="item">
+            
+            <tr>
+                <td>{{ this.name }}</td>
+                <td>{{ this._id }} </td>
+                <td>{{ this.gmail }}</td>
+                <td>{{ this.branch }}</td>
+            
+            </tr>
+            
+            </article>
+        {{/each}}
+        </table>
+    </div>
+    
+</section>
+<section class="update">
+    <h3>Update Data</h3>
+    <form action="/update" method="post" autocomlete="off">
+    
+        <div class="input">
+            <label for="rollno">Roll-No</label>
+            <input type="text" id="rollno" name="rollno" autocomlete="off">
+        </div>
+        <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomlete="off">
+        </div>
+        
+        <div class="input">
+            <label for="gmail">Gmail</label>
+            <input type="text" id="gmail" name="gmail" autocomlete="off">
+        </div>
+         <div class="input">
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" name="branch" autocomlete="off">
+        </div>
+        <button type="submit">UPDATE</button>
+    </form>
+</section>
+<section class="delete">
+    <h3>Delete Data</h3>
+    <form action="/delete" method="post" autocomlete="off">
+        <div class="input">
+            <label for="rollno">Rollno</label>
+            <input type="text" id="rollno" name="rollno" autocomlete="off">
+        </div>
+        <button type="submit">DELETE</button>
+    </form>
+</section>
+<section class="download">
+<h3>Download Data</h3>
+<a href="/exporttocsv" download><button class="button">Download</button></a>
+</section>
