@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "csv-express": "^1.2.2",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "^4.0.6",
+    "http-errors": "~1.6.3",
+    "json2csv": "^4.5.4",
+    "mongodb": "^3.3.2",
+    "morgan": "~1.9.1",
+    "node-excel-export": "^1.4.4",
+    "serve-favicon": "^2.5.0"
+  }
+}
