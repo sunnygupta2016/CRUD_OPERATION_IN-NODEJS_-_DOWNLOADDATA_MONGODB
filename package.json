@@ -9,7 +9,7 @@
     "cookie-parser": "~1.4.4",
     "csv-express": "^1.2.2",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "~4.18.2",
     "hbs": "^4.0.6",
     "http-errors": "~1.6.3",
     "json2csv": "^4.5.4",
